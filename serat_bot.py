@@ -35,7 +35,7 @@ BASE_DIR = Path(__file__).resolve().parent
 MODEL_FILE = BASE_DIR / "Model_h.txt"
 
 MODEL = "openrouter/free"
-MAX_HISTORY = 10
+MAX_HISTORY = 5
 
 MODEL = "openai/gpt-oss-20b"
 
@@ -102,7 +102,7 @@ if not ADMIN_COMMAND:
 MODEL = "openai/gpt-oss-20b"
 BASE_URL = "https://api.groq.com/openai/v1"
 
-MAX_HISTORY = 10
+MAX_HISTORY = 5
 
 client = OpenAI(
     api_key=GROQ_API_KEY,
