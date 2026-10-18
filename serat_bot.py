@@ -225,7 +225,7 @@ async def ask_ai(chat_id, user_message):
         return answer
 
     except Exception as e:
-        print("GROQ ERROR:", repr(e))
+        print("GROQ ERROR:", repr(e), flush=True)
 
         # خطاهای محدودیت سهمیه یا نرخ درخواست
         status_code = getattr(e, "status_code", None)
